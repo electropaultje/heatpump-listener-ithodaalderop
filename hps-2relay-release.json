@@ -5,7 +5,7 @@
     {
       "chipFamily": "ESP32",
       "ota": {
-        "md5": "f64c0a00f01d9b69b64f4912e3332f40",
+        "md5": "7d6020083dac68575a574aac70b4f2fb",
         "path": "/electropaultje/heatpump-listener-ithodaalderop/main/hps/hps-2relay-v1-0-0.bin",
         "release_url": "https://github.com/electropaultje/heatpump-listener-ithodaalderop/blob/main/RELEASE_NOTES.md#version-100",
         "summary": "Initial version"
