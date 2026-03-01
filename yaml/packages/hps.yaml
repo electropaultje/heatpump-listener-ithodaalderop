@@ -35,7 +35,7 @@ sensor:
       - multiply: 0.01
       - throttle: ${throttling_value}
   - platform: modbus_spy
-    name: "Heating/cooling temperature"
+    name: "Heating cooling temperature"
     device_class: "temperature"
     accuracy_decimals: 1
     state_class: "measurement"
@@ -92,7 +92,7 @@ sensor:
       - multiply: 0.01
       - throttle: ${throttling_value}
   - platform: modbus_spy
-    name: "Heating/cooling circuit 1 temperature"
+    name: "Heating cooling circuit 1 temperature"
     device_class: "temperature"
     accuracy_decimals: 1
     state_class: "measurement"
@@ -106,7 +106,7 @@ sensor:
       - multiply: 0.01
       - throttle: ${throttling_value}
   - platform: modbus_spy
-    name: "Heating/cooling circuit 2 temperature"
+    name: "Heating cooling circuit 2 temperature"
     device_class: "temperature"
     accuracy_decimals: 1
     state_class: "measurement"

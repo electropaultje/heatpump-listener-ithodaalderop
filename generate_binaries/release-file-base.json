@@ -1,0 +1,15 @@
+{
+  "name": "Heatpump Listener - Itho Daalderop",
+  "version": "##VERSION##",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "ota": {
+        "md5": "##MD5##",
+        "path": "/electropaultje/heatpump-listener-ithodaalderop/main/##FOLDER##/##FILE##",
+        "release_url": "https://github.com/electropaultje/heatpump-listener-ithodaalderop/blob/main/RELEASE_NOTES.md#version-100",
+        "summary": "Initial version"
+      }
+    }
+  ]
+}

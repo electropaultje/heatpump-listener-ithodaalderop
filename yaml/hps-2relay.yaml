@@ -1,6 +1,6 @@
 substitutions:
   device_name: heatpump-listener
-  friendly_name: Heat Pump Listener - Itho Daalderop HP-S
+  friendly_name: Heat Pump Listener - Itho Daalderop
   throttling_value: 10s
   version: hps-2relay
 
