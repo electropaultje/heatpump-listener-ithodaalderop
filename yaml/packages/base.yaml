@@ -15,7 +15,7 @@ external_components:
   - source: github://electropaultje/modbus-spy-esphome@latest-stable
 
 logger:
-  level: INFO
+  level: DEBUG
   logs:
     component: ERROR
 
@@ -141,6 +141,46 @@ select:
       - "Off"
       - Modbus
       - Pulse
+  - platform: template
+    name: Log level
+    id: log_level
+    optimistic: true
+    restore_value: true
+    entity_category: config
+    initial_option: "INFO"
+    options:
+      - "NONE"
+      - "ERROR"
+      - "WARN"
+      - "INFO"
+      - "DEBUG"
+    on_value:
+      then:
+        - if:
+            condition:
+              lambda: 'return id(log_level).current_option() == "NONE";'
+            then:
+              - logger.set_level: NONE
+        - if:
+            condition:
+              lambda: 'return id(log_level).current_option() == "ERROR";'
+            then:
+              - logger.set_level: ERROR
+        - if:
+            condition:
+              lambda: 'return id(log_level).current_option() == "WARN";'
+            then:
+              - logger.set_level: WARN
+        - if:
+            condition:
+              lambda: 'return id(log_level).current_option() == "INFO";'
+            then:
+              - logger.set_level: INFO
+        - if:
+            condition:
+              lambda: 'return id(log_level).current_option() == "DEBUG";'
+            then:
+              - logger.set_level: DEBUG
 
 web_server:
   id: webserver_component
