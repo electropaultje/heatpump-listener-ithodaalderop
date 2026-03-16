@@ -4,7 +4,7 @@ esphome:
   min_version: 2025.12.0
   project:
     name: "electropaultje.heatpump-listener-ithodaalderop"
-    version: "1.0.0"
+    version: "1.1.0"
 
 esp32:
   board: esp32dev
@@ -79,6 +79,16 @@ script:
             - light.turn_on: led_yellow
             - delay: 250ms
             - light.turn_off: led_yellow
+
+switch:
+  - platform: template
+    name: Log unconfigured modbus data
+    optimistic: true
+    entity_category: config
+    turn_on_action:
+      - modbus_spy.set_log_unconfigured_items: true
+    turn_off_action:
+      - modbus_spy.set_log_unconfigured_items: false
 
 number:
   - platform: template
