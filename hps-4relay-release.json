@@ -1,14 +1,14 @@
 {
   "name": "Heatpump Listener - Itho Daalderop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "builds": [
     {
       "chipFamily": "ESP32",
       "ota": {
-        "md5": "d5726bb98e7158a16e35e918cfcd8e14",
-        "path": "/electropaultje/heatpump-listener-ithodaalderop/main/hps/hps-4relay-v1-0-0.bin",
-        "release_url": "https://github.com/electropaultje/heatpump-listener-ithodaalderop/blob/main/RELEASE_NOTES.md#version-100",
-        "summary": "Initial version"
+        "md5": "2fc8827522136e5e460b6e7bfc1ff77b",
+        "path": "/electropaultje/heatpump-listener-ithodaalderop/main/hps/hps-4relay-v1-1-0.bin",
+        "release_url": "https://github.com/electropaultje/heatpump-listener-ithodaalderop/blob/main/RELEASE_NOTES.md#version-110",
+        "summary": "Added configurable logging"
       }
     }
   ]
