@@ -22,7 +22,7 @@ match = re.search(r'name:\s*([^\s]+)', base_yaml_json)
 project_name = match.group(1) if match else "notfound"
 
 build_path = f"../yaml/.esphome/build/{project_name}"
-compiled_file = f"{build_path}/.pioenvs/{project_name}/firmware.bin"
+compiled_file = f"{build_path}/build/firmware.ota.bin"
 
 variants = [
     {"version": "hps-2relay", "folder": "hps"},
