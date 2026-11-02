@@ -15,7 +15,7 @@ external_components:
   - source: github://electropaultje/modbus-spy-esphome@latest-stable
 
 logger:
-  level: DEBUG
+  level: INFO
   logs:
     component: ERROR
 
